@@ -1,5 +1,6 @@
 <%= form_for @todo do |form| %>
   <%= form.label :title %>
   <%= form.text_field :title %>
+  <%= form.hidden_field :email, :value => session[:current_email] %>
   <%= form.submit "Submit" %>
 <% end %>
