@@ -2,7 +2,7 @@ require 'rails_helper'
 
 feature 'user creates a todo' do
   scenario 'its sucessful' do
-    visit root_path
+    sign_in
 
     click_on "Add new todo"
     fill_in "Title", with: "Take out the trash"
